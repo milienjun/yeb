@@ -39,13 +39,13 @@
     </resultMap>
 
     <resultMap id="MenusWithChildren" type="com.xxx.server.pojo.Menu" extends="BaseResultMap">
-        <id column="id1" property="name"/>
+        <id column="id1" property="id"/>
         <result column="name1" property="name"/>
         <collection property="children" ofType="com.xxx.server.pojo.Menu">
-            <id column="id2" property="name"/>
+            <id column="id2" property="id"/>
             <result column="name2" property="name"/>
             <collection property="children" ofType="com.xxx.server.pojo.Menu">
-                <id column="id3" property="name"/>
+                <id column="id3" property="id"/>
                 <result column="name3" property="name"/>
             </collection>
         </collection>
